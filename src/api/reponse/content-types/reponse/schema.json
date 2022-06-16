@@ -4,20 +4,22 @@
   "info": {
     "singularName": "reponse",
     "pluralName": "reponses",
-    "displayName": "reponse"
+    "displayName": "reponse",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "question": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::question.question"
-    },
     "value": {
       "type": "json"
+    },
+    "question_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::question.question",
+      "inversedBy": "reponses"
     }
   }
 }
