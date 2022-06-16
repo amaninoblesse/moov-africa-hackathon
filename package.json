@@ -17,6 +17,7 @@
     "git": "^0.1.5",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
+    "strapi": "^3.6.10",
     "yarn": "^1.22.19"
   },
   "author": {
