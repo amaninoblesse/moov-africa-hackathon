@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "remplacements",
+  "info": {
+    "singularName": "remplacement",
+    "pluralName": "remplacements",
+    "displayName": "remplacement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ancien_iccid": {
+      "type": "biginteger"
+    },
+    "nouveau_iccid": {
+      "type": "biginteger"
+    },
+    "motif_remplacement": {
+      "type": "text"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "piece_identites",
+  "info": {
+    "singularName": "piece-identite",
+    "pluralName": "piece-identites",
+    "displayName": "piece_identite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_piece": {
+      "type": "string"
+    },
+    "numero_piece": {
+      "type": "string"
+    },
+    "lieu_delivrance": {
+      "type": "string"
+    },
+    "date_emission": {
+      "type": "date"
+    },
+    "date_expiration": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "connexions",
+  "info": {
+    "singularName": "connexion",
+    "pluralName": "connexions",
+    "displayName": "connexion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "is_connected": {
+      "type": "boolean"
+    },
+    "clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    }
+  }
+}

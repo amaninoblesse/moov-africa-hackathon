@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carte_sims",
+  "info": {
+    "singularName": "carte-sim",
+    "pluralName": "carte-sims",
+    "displayName": "carte_SIM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "msisdn": {
+      "type": "biginteger"
+    },
+    "iccid": {
+      "type": "biginteger"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

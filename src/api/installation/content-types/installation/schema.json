@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "installations",
+  "info": {
+    "singularName": "installation",
+    "pluralName": "installations",
+    "displayName": "installation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "est_installe": {
+      "type": "boolean"
+    },
+    "date_installation": {
+      "type": "datetime"
+    },
+    "date_desinstallation": {
+      "type": "datetime"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

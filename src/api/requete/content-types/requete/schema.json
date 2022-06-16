@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requetes",
+  "info": {
+    "singularName": "requete",
+    "pluralName": "requetes",
+    "displayName": "requete"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "type_requete": {
+      "type": "string"
+    },
+    "is_resolved": {
+      "type": "boolean"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

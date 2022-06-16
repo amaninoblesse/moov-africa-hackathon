@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "lieu_naissance": {
+      "type": "string"
+    },
+    "civilite": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "date"
+    },
+    "piece_identite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::piece-identite.piece-identite"
+    },
+    "terminal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::terminal.terminal"
+    }
+  }
+}
